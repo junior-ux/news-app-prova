@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:news_app/constants/constants.dart';
 import 'package:news_app/helper/news.dart';
 import 'package:news_app/models/article_model.dart';
-import 'package:news_app/widgets/blog_tile.dart';
+import 'package:news_app/widgets/card_tile.dart';
 import 'package:news_app/widgets/titulo_app.dart';
-
-
 
 class CategoryNews extends StatefulWidget {
   final String category;
@@ -74,4 +72,3 @@ class _CategoryNewsState extends State<CategoryNews> {
     );
   }
 }
-

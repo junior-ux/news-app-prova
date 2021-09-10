@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/views/home.dart';
 import 'package:news_app/views/splash.dart';
 
 void main() {
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false ,
+      debugShowCheckedModeBanner: false,
       title: 'NewsApp',
       theme: ThemeData(
         primaryColor: Colors.white,

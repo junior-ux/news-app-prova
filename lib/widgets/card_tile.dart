@@ -26,20 +26,22 @@ class BlogTile extends StatelessWidget {
         child: Column(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(40),
+              borderRadius: BorderRadius.circular(50),
               child: Image.network(imageUrl),
             ),
             SizedBox(height: 10),
-            Text(
-              title,
-              style: TextStyle(
-                color: Colors.black87,
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
+            Padding(
+              padding: const EdgeInsets.only(left: 12.0, right: 8.0),
+              child: Text(
+                title,
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
             SizedBox(height: 8),
-
           ],
         ),
       ),
