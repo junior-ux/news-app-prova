@@ -3,6 +3,8 @@ import 'package:news_app/constants/constants.dart';
 import 'package:news_app/helper/news.dart';
 import 'package:news_app/models/article_model.dart';
 import 'package:news_app/widgets/card_tile.dart';
+import 'package:news_app/widgets/load_noticias.dart';
+import 'package:news_app/widgets/navigation_buttom.dart';
 import 'package:news_app/widgets/titulo_app.dart';
 
 class CategoryNews extends StatefulWidget {
@@ -42,9 +44,7 @@ class _CategoryNewsState extends State<CategoryNews> {
       ),
       body: _loading
           ? Center(
-              child: Container(
-                child: CircularProgressIndicator(),
-              ),
+              child: LoadNoticias(),
             )
           : SingleChildScrollView(
               padding: EdgeInsets.symmetric(horizontal: 16),
@@ -69,6 +69,7 @@ class _CategoryNewsState extends State<CategoryNews> {
                 ],
               ),
             ),
+      bottomNavigationBar: Navegacao(),
     );
   }
 }
