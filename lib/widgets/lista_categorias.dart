@@ -14,15 +14,18 @@ class Categorias extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 80,
       child: ListView.builder(
         itemCount: categories.length,
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return CategoryTile(
-            imageUrl: categories[index].imageUrl,
-            categoryName: categories[index].categoryName,
+          return Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: CategoryTile(
+              imageUrl: categories[index].imageUrl,
+              categoryName: categories[index].categoryName,
+            ),
           );
         },
       ),
